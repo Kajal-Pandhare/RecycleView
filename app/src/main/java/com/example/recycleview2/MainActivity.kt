@@ -24,16 +24,23 @@ class MainActivity : AppCompatActivity() {
         recyclerMessage.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
     }
     private fun initMessages() {
-        for (i in 0..10) {
             messages.add(
                 Message(
-                    "Color - Red",
+                    "",
+                    "Color - Pink",
                     "Size - Small",
-                    "Address - S No 24 Plot No 90 Rd No 5 Ganeshnagar Bopkhel Pune pincode-411031",
-                    "Prise - 400",
+                    "Address - Flat No 24, Ramsetu Society, Pune Pincode-410100",
+                    "Price - 400",
                     R.drawable.kurti1,
+                    "ExpectedDeliveryDate-Free delivery Thursday,30 November details or fastest delivery Tomorrow,29 November."
                 )
             )
+        messages.add(Message("",
+            "color - green",
+            "Size - large",
+            "address- Address - Flat No 24, Ramsetu Society, Pune Pincode-410100",
+            "price-800",
+            R.drawable.kurti2,
+            "Expected Delivery Date-Free delivery Thursday,13 November details or fastest delivery Tomorrow,29 November."))
         }
     }
-}

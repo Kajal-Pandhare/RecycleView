@@ -4,15 +4,27 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <ImageView
-        android:src="@drawable/kurti1"
         android:id="@+id/imgSender"
+       android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/txtSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
 
     <TextView
         android:textSize="20sp"
         android:id="@+id/txtColor"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -20,6 +32,7 @@
 
         android:id="@+id/txtSize"
         android:textSize="20sp"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -27,15 +40,35 @@
 
         android:textSize="20sp"
         android:id="@+id/txtAddress"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <TextView
         android:textSize="20sp"
-        android:id="@+id/txtPrise"
+        android:id="@+id/txtPrice"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <TextView
+        android:id="@+id/txtDelivery"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
 
+    <Button
+        android:text="Add to Cart"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+    <Button
+        android:text="Buy Now"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
 
 </LinearLayout>
